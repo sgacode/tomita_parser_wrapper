@@ -1,0 +1,55 @@
+encoding "utf8";
+
+import "base.proto";
+import "articles_base.proto";
+
+import "fact_types.proto";
+import "kw_types.proto";
+import "dictionary_city.gzt";
+import "dictionary_country.gzt";
+
+TAuxDicArticle "имя"
+{
+    key = { "alg:fio" type=CUSTOM }
+}
+
+TAuxDicArticle "персона"
+{
+    key = {"tomita:person.cxx" type=CUSTOM}
+}
+
+TAuxDicArticle "адрес"
+{
+    key = {"tomita:address.cxx" type=CUSTOM}
+}
+
+TAuxDicArticle "география"
+{
+    key = {"tomita:location.cxx" type=CUSTOM}
+}
+
+TAuxDicArticle "месяц"
+{
+    key = "январь" | "февраль" | "март" | "апрель" | "май" | "июнь" |
+          "июль" | "август" | "сентябрь" | "октябрь" | "ноябрь" | "декабрь"
+}
+
+TAuxDicArticle "день_недели"
+{
+    key = "понедельник" | "вторник" | "среда" | "четверг" | "пятница" | "суббота" | "воскресенье"
+}
+
+TAuxDicArticle "дата"
+{
+    key = { "tomita:date.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "фраза"
+{
+    key = { "tomita:phrase.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "разделитель"
+{
+    key = { "tomita:document_splitter.cxx" type=CUSTOM }
+}

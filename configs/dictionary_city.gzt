@@ -1,0 +1,16 @@
+encoding "utf8";
+
+import "base.proto";
+import "articles_base.proto";
+
+city "Нижний_Новгород"
+{
+    key = "Нижний Новгород";
+    mainword = 2;
+}
+
+city "Санкт_Петербург"
+{
+    key = "Санкт-Петербург" | "Питер" | "Петербург";
+    lemma = "Санкт-Петербург";
+}

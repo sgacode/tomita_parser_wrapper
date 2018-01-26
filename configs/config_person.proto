@@ -1,0 +1,25 @@
+encoding "utf8";
+
+TTextMinerConfig {
+
+    // Корневой словарь
+    Dictionary = "dictionary_main.gzt"
+
+    // Количество потоков
+    NumThreads = 4;
+
+    // Формат вывода данных
+    Output = {
+        Format = xml;
+    }
+
+    // Грамматики
+    Articles = [
+        { Name = "персона"}
+    ]
+
+    // Факты
+    Facts = [
+        { Name = "Person" }
+    ]
+}

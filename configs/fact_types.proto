@@ -1,0 +1,36 @@
+import "base.proto";
+import "facttypes_base.proto";
+
+message Person: NFactType.TFact
+{
+    required string Name = 1;
+}
+
+message Address: NFactType.TFact
+{
+    required string StreetName = 1;
+    required string Descr = 2;
+}
+
+message Location: NFactType.TFact
+{
+    required string Name = 1;
+}
+
+message Date: NFactType.TFact
+{
+  optional string DayOfWeek = 1;
+  optional string Day = 2;
+  optional string Month = 3;
+  optional string Year = 4;
+}
+
+message Phrase: NFactType.TFact
+{
+    required string Name = 1;
+}
+
+message DocumentSplitter: NFactType.TFact
+{
+    required string Name = 1;
+}
