@@ -27,7 +27,7 @@ setup(
     author_email='serikov.egor@gmail.com',
     classifiers=[],
     install_requires=reqs,
-    data_files=[
-        ('configs', configs_files),
-    ]
+    package_data={
+        'tomita': ['configs/*']
+    }
 )
