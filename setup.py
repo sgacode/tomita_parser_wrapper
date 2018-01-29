@@ -14,6 +14,8 @@ cur_dir = os.path.abspath(os.path.dirname(__file__))
 install_reqs = parse_requirements(os.path.join(cur_dir, 'requirements.txt'), session=False)
 reqs = [str(ir.req) for ir in install_reqs]
 
+configs_files = ['configs/{0}'.format(file_name) for file_name in os.listdir(os.path.join(cur_dir, 'configs'))]
+
 setup(
     name='tomita-parser',
     version='0.1',
@@ -24,5 +26,8 @@ setup(
     author='Egor Serikov',
     author_email='serikov.egor@gmail.com',
     classifiers=[],
-    install_requires=reqs
+    install_requires=reqs,
+    data_files=[
+        ('configs', configs_files),
+    ]
 )
