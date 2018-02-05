@@ -20,7 +20,6 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     description='Tomita parser wrapper',
-    long_description=README,
     author='Egor Serikov',
     author_email='serikov.egor@gmail.com',
     classifiers=[],
